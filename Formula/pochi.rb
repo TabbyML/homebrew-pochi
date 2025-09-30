@@ -6,14 +6,14 @@ class Pochi < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/TabbyML/pochi/releases/download/cli@#{version}/pochi-mac-arm64.tar.gz"
-      sha256 = "d0dd97829297cfca0475975cff7d900c125608baf5cae54caafc38559fa807fb"
+      sha256 = "b0eae01a62f0a69a97d64a048290b9f8bd49bed5abf1a202fffb91a2575a38ea"
     else
       odie "Unsupported macOS architecture: #{Hardware::CPU.type}"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/TabbyML/pochi/releases/download/cli@#{version}/pochi-linux-x64.tar.gz"
-      sha256 = "75b9c82ad931fff85b490fecf52e56533bd820662196411bac4391dcb4046dfd"
+      sha256 = "42b6f6b16481a6c6f404c77b8ddede6af728b2ffc52f3b32ddc88162daa34aaa"
     else
       odie "Unsupported Linux architecture: #{Hardware::CPU.type}"
     end
