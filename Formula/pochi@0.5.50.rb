@@ -1,4 +1,4 @@
-class Pochi < Formula
+class PochiAT0550 < Formula
   desc "Pochi: Open Source AI Coding Agent"
   homepage "https://docs.getpochi.com"
   version "0.5.50"
