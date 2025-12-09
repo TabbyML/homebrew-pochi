@@ -1,4 +1,4 @@
-class Pochi < Formula
+class PochiATv991500 < Formula
   desc "Pochi: Open Source AI Coding Agent"
   homepage "https://docs.getpochi.com"
   version "v99.150.0"
