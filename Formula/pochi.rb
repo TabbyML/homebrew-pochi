@@ -1,19 +1,19 @@
 class Pochi < Formula
   desc "Pochi: Open Source AI Coding Agent"
   homepage "https://docs.getpochi.com"
-  version "v99.150.0"
+  version "0.5.97"
 
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/TabbyML/pochi/releases/download/cli@#{version}/pochi-mac-arm64.tar.gz"
-      sha256 = "ad5ad0e961e71ae09bacb541ba3ed190466f91bbc4d7168d536e8c0616957eb0"
+      sha256 = "5bc96d707f3069dfb69a790a53487267c60cf9f470df4fa90372890623f8fe95"
     else
       odie "Unsupported macOS architecture: #{Hardware::CPU.type}"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/TabbyML/pochi/releases/download/cli@#{version}/pochi-linux-x64.tar.gz"
-      sha256 = "4a6696c824da40f977efb36c4e95ce3ba4d85dd4e8b78445aae05ebd890aa37e"
+      sha256 = "f50eb57f0ead1408fd9d05d11fe2f56f20b4e9d8bc62e4e226e5961d49953fd2"
     else
       odie "Unsupported Linux architecture: #{Hardware::CPU.type}"
     end
